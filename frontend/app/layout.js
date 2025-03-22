@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import LogoutButton from '@/components/LogoutButton'; // Correct alias import
+
 import './globals.css';
 
 export const metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
             <Link href="/review-submissions">Review Submissions</Link>
             <Link href="/disputes">Disputes</Link>
             <Link href="/payment">Payment</Link>
-            <LogoutButton />
+            
           </nav>
         </header>
         <main style={{ padding: '1rem' }}>{children}</main>
